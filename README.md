@@ -214,14 +214,14 @@ Git сообщит об этом с помощью статуса modified: файл изменён относительно той ве
 
 ```mermaid
 flowchart TD;
-   A[untracked (отслеживаемый)] --> B[git add];
-   B[git add] --> C[stated (в списке на коммит) + tracked];
-   C[stated (в списке на коммит) + tracked] --> D[git commit];
-   D[git commit] --> E[tracked (отслеживаемый)];
-   E[tracked (отслеживаемый)] --> F[изменения];
-   F[изменения] --> G[modified (изменённый)];
-   G[modified (изменённый)] --> H[git add];
-   H[git add] --> C[stated (в списке на коммит) + tracked];
+  A[untracked (отслеживаемый)] --> B[git add];
+  B[git add] --> C[stated (в списке на коммит) + tracked];
+  C[stated (в списке на коммит) + tracked] --> D[git commit];
+  D[git commit] --> E[tracked (отслеживаемый)];
+  E[tracked (отслеживаемый)] --> F[изменения];
+  F[изменения] --> G[modified (изменённый)];
+  G[modified (изменённый)] --> H[git add];
+  H[git add] --> C[stated (в списке на коммит) + tracked];
 ```
 
 
